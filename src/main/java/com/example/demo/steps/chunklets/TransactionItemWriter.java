@@ -23,7 +23,7 @@ public class TransactionItemWriter implements ItemWriter<Transaction> {
     @Transactional
     public void write(List<? extends Transaction> items) throws Exception {
         log.info("salvando a lista de transações em lotes de " + items.size());
-        transactionRepository.saveAll(items);
+        // transactionRepository.saveAll(items);
     }
 
 }
